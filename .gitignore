@@ -1,0 +1,10 @@
+# .gitignore for public growth-review staging
+.DS_Store
+*.log
+.env
+.env.*
+*.csv
+*.tsv
+*.pem
+*.key
+node_modules/
