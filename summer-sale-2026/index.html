@@ -183,7 +183,13 @@
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
                 <td>Logged-in site Notification banners (Jul 13 go/no-go)</td>
                 <td>Shannon</td>
-                <td>Two-phase: pre-launch countdown + sale bar. JS timer (not GIF). Preview <a href="#alert-bars">#alert-bars</a>. Paste from <code>in-app-copy.md</code>.</td>
+                <td>Banner A = stream only; Banner B = SS2650. JS countdown. Matomo impression + click wired. Preview <a href="#alert-bars">#alert-bars</a>.</td>
+              </tr>
+              <tr>
+                <td><span class="status-pill status-pill--pending">Pending</span></td>
+                <td>QA Matomo banner events (draft)</td>
+                <td>Shannon</td>
+                <td>Confirm <code>Summer Sale 2026</code> / <code>Banner Impression</code> + <code>Banner Click</code> for <code>prelaunch-stream</code> and <code>launch</code> in Behaviour → Events.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
@@ -608,7 +614,7 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
                   <span class="af-countdown__label">Starts in</span>
                   <span class="af-countdown__value">--</span>
                 </span>
-                <a href="https://youtube.com/live/GW1spF3_-u0?utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=prelaunch" target="_blank" rel="noopener" class="af-alert-global__btn">Join the live stream</a>
+                <a href="https://youtube.com/live/GW1spF3_-u0?utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=prelaunch" target="_blank" rel="noopener" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-prelaunch" onclick="if(window._paq)_paq.push(['trackEvent','Summer Sale 2026','Banner Click','prelaunch-stream']);">Join the live stream</a>
               </div>
               <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
             </div>
@@ -632,7 +638,7 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
                   <span class="af-countdown__label">Ends in</span>
                   <span class="af-countdown__value">--</span>
                 </span>
-                <a href="https://appfigures.com/account/upgrade?to=111&amp;p=SS2650&amp;utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=launch" class="af-alert-global__btn">Upgrade with SS2650</a>
+                <a href="https://appfigures.com/account/upgrade?to=111&amp;p=SS2650&amp;utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=launch" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-launch" onclick="if(window._paq)_paq.push(['trackEvent','Summer Sale 2026','Banner Click','launch']);">Upgrade with SS2650</a>
               </div>
               <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
             </div>
@@ -645,7 +651,8 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
           <div class="field"><span class="field-label">Type</span><code>alert-global</code> · <code>scope: Internal</code> · <code>style: info</code></div>
           <div class="field"><span class="field-label">Banner A</span>Live stream only (no Summer Sale / SS2650). Countdown to Wed Jul 15 10:30 AM ET. CTA = <a href="https://youtube.com/live/GW1spF3_-u0" rel="noopener">youtube.com/live/GW1spF3_-u0</a>.</div>
           <div class="field"><span class="field-label">Banner B</span>Countdown to sale close. CTA = upgrade with SS2650.</div>
-          <div class="field"><span class="field-label">Reference</span><code>_docs/reference/site-notifications.md</code></div>
+          <div class="field"><span class="field-label">Matomo</span>Category <code>Summer Sale 2026</code>. Impression + Click names: <code>prelaunch-stream</code> · <code>launch</code>. QA in Behaviour → Events after draft click.</div>
+          <div class="field"><span class="field-label">Reference</span><code>_docs/reference/site-notifications.md</code> · payloads in <code>in-app-copy.md</code></div>
         </div>
       </section>
 
