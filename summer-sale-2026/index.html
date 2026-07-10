@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../review.css" />
+  <link rel="stylesheet" href="alert-bars.css?v=3" />
 </head>
 <body>
   <div class="gallery-layout">
@@ -33,13 +34,14 @@
       <div class="track-label">Site + product</div>
       <a href="#website">Website</a>
       <a href="#in-app">In-app</a>
+      <a href="#alert-bars">Alert bars</a>
       <a href="#stream">YouTube stream</a>
       <a href="#support">Support FAQ</a>
     </nav>
 
     <main class="gallery-main">
       <header class="gallery-intro" id="asks">
-        <p class="eyebrow">Public review package · customer-facing only · updated Jul 10</p>
+        <p class="eyebrow">Public review package · customer-facing only · updated Jul 10 · alert bar previews live</p>
         <h1>Summer Sale 2026</h1>
         <p class="lede">
           Window: Tue Jul 14 – Mon Jul 20, 2026 · Code <strong>SS2650</strong> · 50% off
@@ -50,10 +52,10 @@
         <div class="asks">
           <h2>What we still need from Ariel</h2>
           <ol>
-            <li>Review <strong>SS2650</strong> eligibility + RawRules (whitelist, Grow/Scale off code, Monitor=~$45, grandfather deny pairs). Notion: LIF-SUMMER-SALE-CODE-REVIEW.</li>
-            <li>Add <strong>shannon@appfigures.com</strong> to Strapi for email campaigns (Catwalk SSO fails: user not found). Notion: LIF-SUMMER-SALE-STRAPI.</li>
+            <li>Fill <strong>SS2650</strong> RawRules (block same-price Grow→Boost; allow real tier upgrades). Notion: LIF-SUMMER-SALE-CODE-REVIEW.</li>
+            <li>Eyes on Strapi email drafts before Run (search <code>ss26</code>; Shannon brings to publish-ready).</li>
           </ol>
-          <p class="note">Voice/copy: treated as approved (Ariel reviewed drafts; no further pushback). Email sends blocked on Strapi access. Homepage promo div and optional Mailgun/Email 3b are Shannon-owned. <strong>Ops checklist lives in Notion</strong> (canonical): <a href="https://app.notion.com/p/3995dfc0bdd281229fd5fc1b7a1654dc" rel="noopener">Summer Sale 2026 · Launch checklist</a>. This page is a creative review render only.</p>
+          <p class="note">Voice/copy: treated as approved. Strapi drafts live (<code>ss26-01-launch</code> / <code>ss26-02-tiers</code> / <code>ss26-03-last</code>). Homepage promo div, logged-in banner, Typefully, and email sends are Shannon-owned. <strong>Ops checklist lives in Notion</strong> (canonical): <a href="https://app.notion.com/p/3995dfc0bdd281229fd5fc1b7a1654dc" rel="noopener">Summer Sale 2026 · Launch checklist</a>. This page is a creative review render only.</p>
         </div>
       </header>
 
@@ -91,7 +93,7 @@
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Email drafts (3) + Appfigures Summer Sale subjects</td>
                 <td>Shannon</td>
-                <td>Subject leads with Summer Sale; SS2650 in preheader/body. Upgrade-to-Boost line for below-Boost paid</td>
+                <td>Subject leads with Summer Sale; SS2650 in preheader/body</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -109,13 +111,13 @@
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Public review gallery refreshed</td>
                 <td>Shannon</td>
-                <td>This page</td>
+                <td>Optional creative render only</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Google Ad pointing to live stream page</td>
                 <td>Shannon</td>
-                <td>Audience-based Demand Gen / YouTube boost to Wed Jul 15 stream landing page</td>
+                <td>Audience-based Demand Gen / YouTube boost to Wed Jul 15 stream landing</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -127,7 +129,7 @@
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Wed Jul 15 live stream on calendar</td>
                 <td>Ariel / David</td>
-                <td>Already scheduled; stream emails sent. <a href="https://youtube.com/live/GW1spF3_-u0?feature=share" rel="noopener">youtube.com/live/GW1spF3_-u0</a></td>
+                <td>Already scheduled; stream emails sent. <a href="https://youtube.com/live/GW1spF3_-u0" rel="noopener">youtube.com/live/GW1spF3_-u0</a></td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -142,10 +144,22 @@
                 <td><a href="https://fg.rs/ss2650" rel="noopener">fg.rs/ss2650</a> · <a href="https://fg.rs/ss26yt" rel="noopener">fg.rs/ss26yt</a> · <a href="https://fg.rs/ss26boost" rel="noopener">fg.rs/ss26boost</a></td>
               </tr>
               <tr>
+                <td><span class="status-pill status-pill--done">Done</span></td>
+                <td>Add Shannon to Strapi (email campaigns)</td>
+                <td>Ariel / Alex</td>
+                <td>Access confirmed 2026-07-10. Draft in Strapi UI (campaign system = source of truth).</td>
+              </tr>
+              <tr>
+                <td><span class="status-pill status-pill--done">Done</span></td>
+                <td>Create Strapi draft campaigns (3)</td>
+                <td>Shannon</td>
+                <td>Search <code>ss26</code>: <code>ss26-01-launch</code>, <code>ss26-02-tiers</code>, <code>ss26-03-last</code>. Audience ignore list applied. No send.</td>
+              </tr>
+              <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
-                <td>Review SS2650 eligibility + RawRules / grandfather criteria</td>
+                <td>Fill SS2650 RawRules / grandfather criteria</td>
                 <td>Ariel</td>
-                <td>Confirm whitelist, Grow/Scale off code, Monitor=~$45, grandfather deny pairs. Block same-feature price cuts before go-live. Notion: LIF-SUMMER-SALE-CODE-REVIEW.</td>
+                <td>Ariel fills RawRules. Block same-price Grow→Boost; allow Grow-5→Boost-10 style upgrades. Notion: LIF-SUMMER-SALE-CODE-REVIEW.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
@@ -155,27 +169,33 @@
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
-                <td>Add Shannon to Strapi (email campaigns)</td>
-                <td>Ariel / Alex</td>
-                <td>Catwalk login works; Strapi SSO fails with User not found: shannon@appfigures.com. Entry via Catwalk → Email Campaigns.</td>
+                <td>Review Strapi email drafts before Run</td>
+                <td>Ariel</td>
+                <td>Shannon brings to publish-ready; Ariel eyes before Run. Tags <code>ss26-01-launch</code> / <code>ss26-02-tiers</code> / <code>ss26-03-last</code>.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
                 <td>Email sends (Tue / Thu / Mon AM)</td>
                 <td>Shannon</td>
-                <td>Blocked on Strapi access. Copy drafted in package for review.</td>
+                <td>SOP: Preview → test email → publish → Ariel eyes → Run. Send-on = local time. China/AU early-send gotcha.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
-                <td>In-app notifications staged (Jul 13 go/no-go)</td>
-                <td>Shannon + eng</td>
-                <td>Drop if blocked</td>
-              </tr>
-              <tr>
-                <td><span class="status-pill status-pill--pending">Pending</span></td>
-                <td>Buffer social schedule</td>
+                <td>Logged-in site Notification banners (Jul 13 go/no-go)</td>
                 <td>Shannon</td>
-                <td>Before Jul 14 · 4 posts · use fg.rs short links</td>
+                <td>Two-phase: pre-launch countdown + sale bar. JS timer (not GIF). Preview <a href="#alert-bars">#alert-bars</a>. Paste from <code>in-app-copy.md</code>.</td>
+              </tr>
+              <tr>
+                <td><span class="status-pill status-pill--pending">Pending</span></td>
+                <td>Typefully social schedule</td>
+                <td>Shannon</td>
+                <td>Typefully (not Buffer). Ariel inviting. 4 posts · fg.rs short links</td>
+              </tr>
+              <tr>
+                <td><span class="status-pill status-pill--pending">Pending</span></td>
+                <td>YouTube Community post</td>
+                <td>Shannon</td>
+                <td>Community re-enabled 2026-07-10. Launch/stream promo post.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
@@ -562,6 +582,73 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
         </div>
       </section>
 
+      <!-- ALERT BARS (Site Notifications) -->
+      <section class="screen-block" id="alert-bars">
+        <div class="badge-row">
+          <span class="badge">In-app</span>
+          <span class="badge">Site Notifications</span>
+          <span class="badge">Live preview</span>
+        </div>
+        <h2>Logged-in alert bars (alert-global)</h2>
+        <p class="screen-id">Thin top-of-page bars inside the product. Banner A: tease + stream CTA (no code). Banner B: SS2650 + upgrade. JS countdown. Paste from <code>in-app-copy.md</code>.</p>
+
+        <div class="alert-bar-preview">
+          <p class="alert-bar-preview__label">Banner A · Pre-launch (Mon Jul 13 – Tue Jul 14 9:00 AM ET) · countdown to sale open · CTA = stream only</p>
+          <div class="alert-bar-frame">
+            <div class="alert-bar-frame__chrome">
+              <span class="alert-bar-frame__dot"></span>
+              <span class="alert-bar-frame__dot"></span>
+              <span class="alert-bar-frame__dot"></span>
+              <span>appfigures.com · logged in · draft QA</span>
+            </div>
+            <div class="af-alert-global-wrap">
+              <div class="af-alert-global" role="alert">
+                <strong>Summer Sale starts Tuesday:</strong> 50% off Boost and Amplify.
+                <span class="af-countdown" data-af-countdown="2026-07-14T13:00:00.000Z" aria-live="polite">
+                  <span class="af-countdown__label">Starts in</span>
+                  <span class="af-countdown__value">--</span>
+                </span>
+                <a href="https://youtube.com/live/GW1spF3_-u0?utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=prelaunch" target="_blank" rel="noopener" class="af-alert-global__btn">Join Wed Jul 15 live stream</a>
+              </div>
+              <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
+            </div>
+            <div class="alert-bar-frame__body">Report content area (mock)</div>
+          </div>
+        </div>
+
+        <div class="alert-bar-preview">
+          <p class="alert-bar-preview__label">Banner B · Sale window (Tue Jul 14 – Mon Jul 20 11:59 PM ET) · SS2650 + upgrade CTA</p>
+          <div class="alert-bar-frame">
+            <div class="alert-bar-frame__chrome">
+              <span class="alert-bar-frame__dot"></span>
+              <span class="alert-bar-frame__dot"></span>
+              <span class="alert-bar-frame__dot"></span>
+              <span>appfigures.com · logged in</span>
+            </div>
+            <div class="af-alert-global-wrap">
+              <div class="af-alert-global" role="alert">
+                <strong>Appfigures Summer Sale:</strong> 50% off Boost and Amplify with code <strong>SS2650</strong>. Existing members must upgrade.
+                <span class="af-countdown" data-af-countdown="2026-07-21T03:59:00.000Z" aria-live="polite">
+                  <span class="af-countdown__label">Ends in</span>
+                  <span class="af-countdown__value">--</span>
+                </span>
+                <a href="https://appfigures.com/account/upgrade?to=111&amp;p=SS2650&amp;utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=launch" class="af-alert-global__btn">Upgrade with SS2650</a>
+              </div>
+              <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
+            </div>
+            <div class="alert-bar-frame__body">Report content area (mock)</div>
+          </div>
+        </div>
+
+        <div class="copy-card" style="margin-top:1.25rem">
+          <h3>Staging notes</h3>
+          <div class="field"><span class="field-label">Type</span><code>alert-global</code> · <code>scope: Internal</code> · <code>style: info</code></div>
+          <div class="field"><span class="field-label">Banner A</span>Countdown to sale open. CTA = YouTube live stream only. No SS2650 or upgrade link.</div>
+          <div class="field"><span class="field-label">Banner B</span>Countdown to sale close. CTA = upgrade with SS2650.</div>
+          <div class="field"><span class="field-label">Reference</span><code>_docs/reference/site-notifications.md</code></div>
+        </div>
+      </section>
+
       <!-- IN-APP -->
       <section class="screen-block" id="in-app">
         <div class="badge-row"><span class="badge">In-app</span></div>
@@ -622,5 +709,6 @@ Offer ends Jul 20, 2026 11:59 PM ET. Existing members must upgrade to a higher t
       </section>
     </main>
   </div>
+  <script src="alert-bars.js"></script>
 </body>
 </html>
