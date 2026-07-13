@@ -93,7 +93,7 @@
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Email drafts (3) + Appfigures Summer Sale subjects</td>
                 <td>Shannon</td>
-                <td>Subject leads with Summer Sale; SS2650 in preheader/body</td>
+                <td>All three revised 2026-07-13: verified claims, one primary CTA, <code>{{ name }}</code>, consistent legal footer.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -120,10 +120,10 @@
                 <td><strong>Done.</strong> Livestream event ad groups live in Google Ads (Demand Gen / YouTube → Wed Jul 15 stream landing). Confirmed 2026-07-13.</td>
               </tr>
               <tr>
-                <td><span class="status-pill status-pill--done">Done</span></td>
-                <td>Voice / accuracy review of customer-facing copy</td>
+                <td><span class="status-pill status-pill--pending">Pending</span></td>
+                <td>Eyes on revised Email #1/#2/#3 copy</td>
                 <td>Ariel</td>
-                <td>Reviewed drafts; no further pushback. Treated as approved 2026-07-10.</td>
+                <td>Prior voice review complete. All three revised emails need final eyes in Strapi before Run.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -165,25 +165,25 @@
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
                 <td>Review Strapi email drafts before Run</td>
                 <td>Ariel</td>
-                <td>Shannon brings to publish-ready; Ariel eyes before Run. Tags <code>ss26-01-launch</code> / <code>ss26-02-tiers</code> / <code>ss26-03-last</code>.</td>
+                <td>Shannon syncs all three revised emails, sends tests, and clears Validation. Ariel eyes before Run. Tags <code>ss26-01-launch</code> / <code>ss26-02-tiers</code> / <code>ss26-03-last</code>.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--pending">Pending</span></td>
                 <td>Email sends (Tue / Thu / Mon AM)</td>
                 <td>Shannon</td>
-                <td>SOP: Preview → test email → publish → Ariel eyes → Run. Send-on = local time. China/AU early-send gotcha.</td>
+                <td>Sync canonical copy → Preview → test → Validation → publish → Ariel eyes → Run. Email #3 uses a static deadline.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Banner A · Pre-launch stream alert bar</td>
                 <td>Shannon</td>
-                <td><strong>Live 2026-07-13.</strong> Global · stream only. Through stream handoff. Matomo <code>prelaunch-stream</code>. Preview <a href="#alert-bars">#alert-bars</a>.</td>
+                <td><strong>Live and script-free 2026-07-13.</strong> Global · static Wed Jul 15 10:30 AM time + YouTube CTA. No inline scripts or Matomo.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
                 <td>Banner B · Sale alert bar (SS2650)</td>
                 <td>Shannon</td>
-                <td><strong>Staged live 2026-07-13</strong> (starts when A ends). Internal + plan gate; trial shown. Matomo <code>launch</code>. Preview <a href="#alert-bars">#alert-bars</a>.</td>
+                <td><strong>Staged script-free 2026-07-13.</strong> Internal · <code>fg.rs/ss2650</code> CTA · static Jul 20 deadline. No plan-gate or Matomo scripts.</td>
               </tr>
               <tr>
                 <td><span class="status-pill status-pill--done">Done</span></td>
@@ -593,10 +593,10 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
           <span class="badge">Live preview</span>
         </div>
         <h2>Logged-in alert bars (alert-global)</h2>
-        <p class="screen-id">Thin top-of-page bars inside the product. Banner A: live stream only (no sale). Banner B: SS2650 + upgrade. JS countdown. Paste from <code>in-app-copy.md</code>.</p>
+        <p class="screen-id">Thin top-of-page bars inside the product. Banner A: live stream only (no sale). Banner B: SS2650 + upgrade. Both use script-free HTML with static dates.</p>
 
         <div class="alert-bar-preview">
-          <p class="alert-bar-preview__label">Banner A · Live (through stream handoff) · stream promo only · countdown to Wed Jul 15 10:30 AM ET</p>
+          <p class="alert-bar-preview__label">Banner A · Live through stream handoff · static Wed Jul 15 10:30 AM ET</p>
           <div class="alert-bar-frame">
             <div class="alert-bar-frame__chrome">
               <span class="alert-bar-frame__dot"></span>
@@ -606,12 +606,8 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
             </div>
             <div class="af-alert-global-wrap">
               <div class="af-alert-global" role="alert">
-                <strong>Live app teardown Wed Jul 15:</strong> Ariel reviews real apps: keywords, screenshots, and quick wins.
-                <span class="af-countdown" data-af-countdown="2026-07-15T14:30:00.000Z" aria-live="polite">
-                  <span class="af-countdown__label">Starts in</span>
-                  <span class="af-countdown__value">--</span>
-                </span>
-                <a href="https://youtube.com/live/GW1spF3_-u0?utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=prelaunch" target="_blank" rel="noopener" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-prelaunch" onclick="if(window._paq)_paq.push(['trackEvent','Summer Sale 2026','Banner Click','prelaunch-stream']);">Join the live stream</a>
+                <strong>Live app teardown Wednesday July 15 at 10:30AM:</strong> Ariel reviews real apps: keywords, screenshots, and quick wins.
+                <a href="https://youtube.com/live/GW1spF3_-u0?utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=prelaunch" target="_blank" rel="noopener" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-prelaunch">Join the live stream</a>
               </div>
               <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
             </div>
@@ -630,12 +626,8 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
             </div>
             <div class="af-alert-global-wrap">
               <div class="af-alert-global" role="alert">
-                <strong>Appfigures Summer Sale:</strong> 50% off Boost and Amplify with code <strong>SS2650</strong>. Existing members must upgrade.
-                <span class="af-countdown" data-af-countdown="2026-07-21T03:59:00.000Z" aria-live="polite">
-                  <span class="af-countdown__label">Ends in</span>
-                  <span class="af-countdown__value">--</span>
-                </span>
-                <a href="https://appfigures.com/account/upgrade?to=111&amp;p=SS2650&amp;utm_campaign=summer-sale-2026&amp;utm_medium=banner&amp;utm_content=launch" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-launch" onclick="if(window._paq)_paq.push(['trackEvent','Summer Sale 2026','Banner Click','launch']);">Upgrade with SS2650</a>
+                <strong>Appfigures Summer Sale:</strong> 50% off Boost and Amplify with code <strong>SS2650</strong>. Ends Mon Jul 20.
+                <a href="https://fg.rs/ss2650" class="af-alert-global__btn" data-track="summer-sale-2026|click|banner-launch">Upgrade with SS2650</a>
               </div>
               <button type="button" class="af-alert-global__dismiss" aria-label="Dismiss" title="Dismissible in production">×</button>
             </div>
@@ -646,9 +638,9 @@ https://appfigures.com/account/upgrade?p=SS2650&utm_campaign=summer-sale-2026&ut
         <div class="copy-card" style="margin-top:1.25rem">
           <h3>Staging notes</h3>
           <div class="field"><span class="field-label">Type</span><code>alert-global</code> · <code>scope: Internal</code> · <code>style: info</code></div>
-          <div class="field"><span class="field-label">Banner A</span>Live stream only (no Summer Sale / SS2650). Countdown to Wed Jul 15 10:30 AM ET. CTA = <a href="https://youtube.com/live/GW1spF3_-u0" rel="noopener">youtube.com/live/GW1spF3_-u0</a>.</div>
-          <div class="field"><span class="field-label">Banner B</span>Countdown to sale close. CTA = upgrade with SS2650.</div>
-          <div class="field"><span class="field-label">Matomo</span>Category <code>Summer Sale 2026</code>. Impression + Click names: <code>prelaunch-stream</code> · <code>launch</code>. QA in Behaviour → Events after draft click.</div>
+          <div class="field"><span class="field-label">Banner A</span>Live stream only (no Summer Sale / SS2650). Static Wed Jul 15 10:30 AM ET. CTA = <a href="https://youtube.com/live/GW1spF3_-u0" rel="noopener">youtube.com/live/GW1spF3_-u0</a>.</div>
+          <div class="field"><span class="field-label">Banner B</span>Static Jul 20 deadline. CTA = <a href="https://fg.rs/ss2650" rel="noopener">fg.rs/ss2650</a>.</div>
+          <div class="field"><span class="field-label">Tracking</span>UTMs and optional <code>data-track</code> only. Do not use inline scripts or Matomo <code>onclick</code> handlers.</div>
           <div class="field"><span class="field-label">Reference</span><code>_docs/reference/site-notifications.md</code> · payloads in <code>in-app-copy.md</code></div>
         </div>
       </section>
